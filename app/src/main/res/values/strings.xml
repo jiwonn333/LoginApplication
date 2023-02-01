@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LoginApplication</string>
+
+    <string name="kakao_app_key">9fa4da609262d7711b88bd1688953029</string>
+    <string name="kakao_scheme_app_key">kakao9fa4da609262d7711b88bd1688953029</string>
+
+    <string name="naver_client_id">J8WIOwga5BSn7z8rSzv0</string>
+    <string name="naver_client_secret">Wh_0nUWpwB</string>
+    <string name="naver_client_name">Naver 로그인</string>
+</resources>
