@@ -99,6 +99,7 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
 
         val oauthLoginCallback = object : OAuthLoginCallback {
             override fun onSuccess() {
+                // login success 시 Log
                 Log.d("test", "네이버 인증 성공")
                 Log.d("test", "AccessToken : " + NaverIdLoginSDK.getAccessToken())
                 Log.d("test", "client id : " + getString(R.string.naver_client_id))
@@ -107,6 +108,7 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
                 Log.d("test", "TokenType : " + NaverIdLoginSDK.getTokenType())
                 Log.d("test", "State : " + NaverIdLoginSDK.getState().toString())
 
+                // 화면이동
                 val intent = Intent(baseContext, LoginSuccessActivity::class.java)
                 intent.putExtra("login", "naver")
                 startActivity(intent)
@@ -128,6 +130,7 @@ class LoginActivity : AppCompatActivity(), OnClickListener {
 
         NaverIdLoginSDK.authenticate(this, oauthLoginCallback)
     }
+
 
 
 
